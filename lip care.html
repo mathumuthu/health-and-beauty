@@ -180,6 +180,40 @@
       min-height: 38px;
     }
 
+
+
+
+
+.lip-btn, .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #b20080;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.lip-btn:hover, .btn:hover {
+  background: #ff0099;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .lip-btn {
       display: inline-block;
       background: linear-gradient(90deg,#ff3b8a,#ff1a8c);
@@ -242,53 +276,54 @@
       <!-- Products grid -->
       <div class="lipcare-grid" id="lipGrid">
 
-        <!-- Card 1 -->
-        <article class="lipcare-card" data-id="1">
-          <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Hydrating Lip Balm">
-          <h3>Hydrating Lip Balm</h3>
-          <p>Shea butter + vitamin E formula. Long-lasting moisture for up to 12 hours.</p>
-          <button class="lip-btn" type="button">Buy Now</button>
-        </article>
+      <!-- Card 1 -->
+<article class="lipcare-card" data-id="1">
+  <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Hydrating Lip Balm">
+  <h3>Hydrating Lip Balm</h3>
+  <p>Shea butter + vitamin E formula. Long-lasting moisture for up to 12 hours.</p>
+   <a href="404error.html" class="lip-btn">Buy Now</a>
+</article>
 
-        <!-- Card 2 -->
-        <article class="lipcare-card" data-id="2">
-          <img src="lip balm.webp" alt="Strawberry Lip Scrub">
-          <h3>Strawberry Sugar Scrub</h3>
-          <p>Gentle exfoliation to remove dry skin and restore softness & natural pinkness.</p>
-          <button class="lip-btn" type="button">Buy Now</button>
-        </article>
+<!-- Card 2 -->
+<article class="lipcare-card" data-id="2">
+  <img src="lip balm.webp" alt="Strawberry Lip Scrub">
+  <h3>Strawberry Sugar Scrub</h3>
+  <p>Gentle exfoliation to remove dry skin and restore softness & pinkness.</p>
+  <a href="404error.html" class="lip-btn">Buy Now</a>
+</article>
 
-        <!-- Card 3 -->
-        <article class="lipcare-card" data-id="3">
-          <img src="eye gel (1).webp" alt="Night Repair Lip Mask">
-          <h3>Overnight Repair Lip Mask</h3>
-          <p>Intensive overnight treatment for smooth, glossy lips by morning.</p>
-          <button class="lip-btn" type="button">Buy Now</button>
-        </article>
+<!-- Card 3 -->
+<article class="lipcare-card" data-id="3">
+  <img src="eye gel (1).webp" alt="Night Repair Lip Mask">
+  <h3>Overnight Repair Lip Mask</h3>
+  <p>Intensive overnight treatment for smooth, glossy lips by morning.</p>
+  <a href="404error.html" class="lip-btn">Buy Now</a>
+</article>
 
-        <!-- Card 4 -->
-        <article class="lipcare-card" data-id="4">
-          <img src="lip tint.webp" alt="Natural Lip Tint">
-          <h3>Natural Lip Tint</h3>
-          <p>Light tint with beetroot extract — a hint of color with hydration.</p>
-          <button class="lip-btn" type="button">Buy Now</button>
-        </article>
+<!-- Card 4 -->
+<article class="lipcare-card" data-id="4">
+  <img src="lip tint.webp" alt="Natural Lip Tint">
+  <h3>Natural Lip Tint</h3>
+  <p>Light tint with beetroot extract — a hint of color with hydration.</p>
+  <a href="404error.html" class="lip-btn">Buy Now</a>
+</article>
 
-        <!-- Card 5 -->
-        <article class="lipcare-card" data-id="5">
-          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Glossy Lip Oil">
-          <h3>Glossy Lip Oil</h3>
-          <p>High-shine finish with coconut & jojoba oil for plump, dewy lips.</p>
-          <button class="lip-btn" type="button">Buy Now</button>
-        </article>
+<!-- Card 5 -->
+<article class="lipcare-card" data-id="5">
+  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Glossy Lip Oil">
+  <h3>Glossy Lip Oil</h3>
+  <p>High-shine finish with coconut & jojoba oil for plump, dewy lips.</p>
+  <a href="404error.html" class="lip-btn">Buy Now</a>
+</article>
 
-        <!-- Card 6 -->
-        <article class="lipcare-card" data-id="6">
-          <img src="vitamen.webp" alt="Brightening Lip Serum">
-          <h3>Brightening Lip Serum</h3>
-          <p>Targets pigmentation and enhances natural pink tone with regular use.</p>
-          <button class="lip-btn" type="button">Buy Now</button>
-        </article>
+<!-- Card 6 -->
+<article class="lipcare-card" data-id="6">
+  <img src="vitamen.webp" alt="Brightening Lip Serum">
+  <h3>Brightening Lip Serum</h3>
+  <p>Targets pigmentation and enhances natural pink tone with regular use.</p>
+  <a href="404error.html" class="lip-btn">Buy Now</a>
+</article>
+
 
       </div>
 
@@ -334,7 +369,7 @@
 
           b.classList.add('added');
           const originalText = b.textContent;
-          b.textContent = 'Added ✔';
+          // b.textContent = ' ';
           // simple tiny animation effect
           b.animate([
             { transform: 'scale(1)' },
@@ -361,8 +396,7 @@
       });
     })();
   </script>
-</body>
-</html>
+
 
 
 
