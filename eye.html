@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="lip.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+<body>
+  
+
+
+
+
+ <div class="topbar">
+    <header class="header">
+      <div class="logo">
+        <img src="logo .webp" alt="STACKLY Logo" />
+        <h2>STACKLY</h2>
+      </div>
+      <div class="contact">
+        <div class="contact1">
+          <!-- <p class="phone"><a href="./404.html">+91 12345 67890</a></p> -->
+          <!-- <p class="email"><a href="./404.html">info@stackly.com</a></p> -->
+        </div>
+        <!-- <div class="time">
+          <p class="hours">Mon-Fri: 9 am-6 pm</p>
+        </div> -->
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    
+     <nav class="navBar">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./home page2.html">Home ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="./index.html">Home page 1</a></li>
+            </ul>
+          </li>
+          <li><a href="./eye.html">Eye care</a></li>
+          <!-- <li><a href="./industry.html">Shop</a></li> -->
+          <!-- <li><a href="./safety.html">support</a></li> -->
+           <li><a href="./lip care.html">Lip care</a></li> 
+           <li><a href="./brand.html">Brands</a></li> 
+         <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+
+          <li><a href="./login.html">Log In</a></li>
+          <li class="sign"><button onclick="window.location.href='./contact2.html'">Get in touch→ </button></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+<body>
+
+<section class="eye-section">
+    <div class="eye-header">
+        <h1>Eye Care</h1>
+        <p>Protect, moisturize & brighten your beautiful eyes with premium care products.</p>
+    </div>
+
+    <div class="eye-grid">
+
+        <!-- Product 1 -->
+        <div class="eye-card">
+            <img src="eye gel (1).webp" alt="Eye Gel">
+            <h3>Cooling Under Eye Gel</h3>
+            <p>Reduces puffiness, refreshes tired eyes & hydrates deeply.</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="eye-card">
+            <img src="eyecare.png" alt="Eye Mask">
+            <h3>Hydrating Eye Mask</h3>
+            <p>Brightens dark circles and keeps under-eye skin glowing.</p>
+            <button class="btn">Shop Now</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="eye-card">
+            <img src="lip tint.webp" alt="Eye Balm">
+            <h3>Anti-Age Eye Balm</h3>
+            <p>Tightening + anti-wrinkle + moisture lock formula.</p>
+            <button class="btn">Explore</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="eye-card">
+            <img src="vitamen.webp" alt="Eye Drops">
+            <h3>Refreshing Eye Drops</h3>
+            <p>Instant hydration, reduces redness & dryness.</p>
+            <button class="btn">Try Now</button>
+        </div>
+
+    </div>
+
+    <div class="eye-tips">
+        <h2>Best Eye Care Tips</h2>
+        <ul>
+            <li>Use a cooling eye gel daily before sleep.</li>
+            <li>Wear sunglasses to protect from UV rays.</li>
+            <li>Keep screen brightness low at night.</li>
+            <li>Drink 3–4 liters of water every day.</li>
+            <li>Use hydrating masks twice a week.</li>
+        </ul>
+    </div>
+
+    <div class="brands">
+        <h2>Top Eye Care Brands</h2>
+
+        <div class="brand-logos">
+            <span>L'Oréal</span>
+            <span>The Ordinary</span>
+            <span>Plum</span>
+            <span>CeraVe</span>
+            <span>Neutrogena</span>
+        </div>
+    </div>
+
+</section>
+<style>*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background:#fff7fb;
+    color:#333;
+}
+
+/* Main Section */
+.eye-section{
+    padding:60px 20px;
+}
+
+/* Header */
+.eye-header{
+    text-align:center;
+    margin-bottom:40px;
+    animation: fadeIn 1s ease;
+}
+
+.eye-header h1{
+    font-size:42px;
+    color:#b20080;
+}
+
+.eye-header p{
+    font-size:16px;
+    color:#666;
+}
+
+/* Product Grid */
+.eye-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+}
+
+.eye-card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:transform .3s;
+    animation: zoomIn 1s ease;
+}
+
+.eye-card:hover{
+    transform:scale(1.07);
+}
+
+.eye-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.eye-card h3{
+    font-size:20px;
+    margin-bottom:10px;
+    color:#b20080;
+}
+
+.eye-card p{
+    font-size:15px;
+    color:#555;
+}
+
+.btn{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#b20080;
+    color:white;
+    font-size:14px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff0099;
+    transform:scale(1.05);
+}
+
+/* Tips */
+.eye-tips{
+    margin-top:50px;
+}
+
+.eye-tips h2{
+    font-size:28px;
+    color:#b20080;
+    margin-bottom:15px;
+}
+
+.eye-tips ul{
+    list-style:none;
+    padding-left:0;
+}
+
+.eye-tips ul li{
+    background:#ffe1f5;
+    padding:12px 18px;
+    border-radius:12px;
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+/* Brands */
+.brands{
+    margin-top:50px;
+    text-align:center;
+}
+
+.brands h2{
+    font-size:28px;
+    color:#b20080;
+    margin-bottom:20px;
+}
+
+.brand-logos{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.brand-logos span{
+    background:#fff;
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.brand-logos span:hover{
+    transform:scale(1.1);
+    background:#ffccf1;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes zoomIn{
+    from{opacity:0; transform:scale(0.8);}
+    to{opacity:1; transform:scale(1);}
+}
+
+/* Mobile */
+@media(max-width:550px){
+    .eye-header h1{
+        font-size:32px;
+    }
+    .eye-card img{
+        height:180px;
+    }
+}
+</style>
+<script>// Button click animation
+document.querySelectorAll(".btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.style.transform = "scale(0.9)";
+        setTimeout(() => {
+            btn.style.transform = "scale(1)";
+        }, 150);
+    });
+});
+
+// Smooth scroll for the whole page
+window.scrollTo({
+  top: 0,
+  behavior: "smooth"
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <h2>GlowCare</h2>
+      <p>Your trusted partner in beauty, skincare & wellness. Quality products made with love.</p>
+
+      <div class="social">
+        <a href="404error.html"><i class="fab fa-facebook"></i></a>
+        <a href="404error.html"><i class="fab fa-instagram"></i></a>
+        <a href="404error.html"><i class="fab fa-youtube"></i></a>
+        <a href="404error.html"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home page2.html">Home</a></li>
+        <li><a href="eye.html">eyecare</a></li>
+        <li><a href="lip care.html">lipcare</a></li>
+        <li><a href="services.html">Beauty Services</a></li>
+        <li><a href="hair designer.html">Designer</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="404error.html">My Account</a></li>
+        <li><a href="404error.html">Order Tracking</a></li>
+        <li><a href="404error.html">Shipping Info</a></li>
+        <li><a href="404error.html">Return Policy</a></li>
+        <li><a href="404error.html">contact</a></li>
+      </ul>
+    </div>
+
+  <div class="newsletter">
+  <h3>Join Our Newsletter</h3>
+  <input type="email" id="email" placeholder="Enter your email">
+  <button type="button" onclick="subscribe()">Subscribe Now</button>
+  <p id="msg"></p>
+</div>
+
+
+  </div>
+
+  <div class="bottom-footer">
+    © 2025 GlowCare. All Rights Reserved.
+  </div>
+</footer>
+<!-- ============ FOOTER END ============ -->
+
+<script src="eye.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

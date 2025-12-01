@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="hair colur.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+<body>
+  
+
+
+
+
+ <div class="topbar">
+    <header class="header">
+      <div class="logo">
+        <img src="logo .webp" alt="STACKLY Logo" />
+        <h2>STACKLY</h2>
+      </div>
+      <div class="contact">
+        <div class="contact1">
+          <!-- <p class="phone"><a href="./404.html">+91 12345 67890</a></p> -->
+          <!-- <p class="email"><a href="./404.html">info@stackly.com</a></p> -->
+        </div>
+        <!-- <div class="time">
+          <p class="hours">Mon-Fri: 9 am-6 pm</p>
+        </div> -->
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
+    </header>
+
+   
+     <nav class="navBar">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./index.html">Home ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="./home page1.html">Home page 2</a></li>
+            </ul>
+          </li>
+          <li><a href="./hair colour.html">Haircare & colour</a></li>
+          <!-- <li><a href="./industry.html">Shop</a></li> -->
+          <!-- <li><a href="./safety.html">support</a></li> -->
+           <li><a href="./hair designer.html">Hair Designer's</a></li> 
+           <li><a href="./services.html">Service & pricing</a></li> 
+         <li><a href="./dashboard.html">Dashboard</a></li>
+
+          <li><a href="./login.html">Log In</a></li>
+          <li class="sign"><button onclick="window.location.href='./contact.html'">Get in touch→ </button></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main class="hair-page">
+
+  <!-- HERO -->
+  <section class="hero-hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Haircare & Colour Studio</h1>
+        <p>Modern cuts, professional colour, and nourishing treatments — tailored to your hair and lifestyle.</p>
+        <div class="hero-cta">
+          <a href="404.html" class="btn">Explore Services</a>
+          <a href="404.html" class="btn btn-outline">Book a Consultation</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="homeimg.png" width="400px" alt="Hair colour studio" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <article class="service-card">
+        <img src="hairimg.webp" alt="Cut & Style" />
+        <h3>Cut & Style</h3>
+        <p>Precision cutting, blowouts, and finishes to match your face shape and style.</p>
+        <span class="price">From ₹799</span>
+      </article>
+
+      <article class="service-card">
+        <img src="rainbow.webp" alt="Full Colour" />
+        <h3>Full Colour</h3>
+        <p>Rich, long-lasting colour with professional-grade colourists and quality pigments.</p>
+        <span class="price">From ₹2,499</span>
+      </article>
+
+      <article class="service-card">
+        <img src="bagalaye.webp" alt="Highlights and Balayage" />
+        <h3>Highlights & Balayage</h3>
+        <p>Natural-looking dimension, customised placement for low maintenance.</p>
+        <span class="price">From ₹3,499</span>
+      </article>
+
+      <article class="service-card">
+        <img src="tretment.webp" alt="Hair treatment" />
+        <h3>Nourishing Treatments</h3>
+        <p>Keratin smoothing, deep conditioning and scalp therapies for healthy shine.</p>
+        <span class="price">From ₹1,199</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- COLOUR SWATCHES -->
+  <section class="swatches">
+    <h2>Colour Ideas</h2>
+    <p class="muted">Tap any swatch to preview — tell your stylist the swatch name.</p>
+    <div class="swatch-grid" aria-hidden="false">
+      <button class="swatch" data-name="Warm Chestnut" style="background: #7b3f00"></button>
+      <button class="swatch" data-name="Caramel Blonde" style="background: #d4a373"></button>
+      <button class="swatch" data-name="Ash Brown" style="background: #6b6f74"></button>
+      <button class="swatch" data-name="Rose Gold" style="background: #b76e79"></button>
+      <button class="swatch" data-name="Jet Black" style="background: #0b0b0b"></button>
+      <button class="swatch" data-name="Silver Grey" style="background: #c7c9cc"></button>
+    </div>
+    <div id="swatch-name" class="swatch-name" aria-live="polite"></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <h2>Before & After Gallery</h2>
+    <div class="gallery-grid">
+      <img class="gallery-item" src="before after.webp" alt="Before 1" />
+      <!-- <img class="gallery-item" src="https://via.placeholder.com/600x600?text=After1" alt="After 1" /> -->
+      <img class="gallery-item" src="afbe.webp" alt="Before 2" />
+      <img class="gallery-item" src="hair after.webp" alt="After 2" />
+      <img class="gallery-item" src="hait befor.webp" alt="Before 3" />
+      <!-- <img class="gallery-item" src="https://via.placeholder.com/600x600?text=After3" alt="After 3" /> -->
+    </div>
+  </section>
+
+  <!-- RESPONSIVE VIDEO -->
+  <section class="video">
+    <h2>Lookbook / Tutorial</h2>
+    <div class="video-wrapper">
+      <!-- example YouTube embed — replace src with your video -->
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Hair tutorial" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>What clients say</h2>
+    <div class="testi-slider">
+      <div class="testi-slide active">
+        <p>"Got my balayage done — the colour is perfect and maintenance tips were great."</p>
+        <strong>- Ananya</strong>
+      </div>
+      <div class="testi-slide">
+        <p>"Friendly staff and a comfortable salon. My hair feels healthier than ever."</p>
+        <strong>- Rohan</strong>
+      </div>
+      <div class="testi-slide">
+        <p>"Quick consultation, clear pricing, lovely finish. Highly recommended."</p>
+        <strong>- Priya</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / BOOKING -->
+  <section id="booking" class="booking">
+    <div class="booking-inner">
+      <div>
+        <h2>Ready for a new look?</h2>
+        <p>Book a free colour consultation with our senior colourist.</p>
+      </div>
+      <div>
+        <a href="404.html" class="btn btn-primary-large">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY MODAL (hidden by default) -->
+  <div id="imgModal" class="img-modal" aria-hidden="true">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <img id="modalImg" src="" alt="Expanded gallery image" />
+  </div>
+
+</main>
+<script src="hair colour.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <h2>GlowCare</h2>
+      <p>Your trusted partner in beauty, skincare & wellness. Quality products made with love.</p>
+
+      <div class="social">
+        <a href="404.html"><i class="fab fa-facebook"></i></a>
+        <a href="404.html"><i class="fab fa-instagram"></i></a>
+        <a href="404.html"><i class="fab fa-youtube"></i></a>
+        <a href="404.html"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home page2.html">Home</a></li>
+        <li><a href="eye.html">eyecare</a></li>
+        <li><a href="lip care.html">lipcare</a></li>
+        <li><a href="services.html">Beauty Services</a></li>
+        <li><a href="hair designer.html">Designer</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="404.html">My Account</a></li>
+        <li><a href="404.html">Order Tracking</a></li>
+        <li><a href="404.html">Shipping Info</a></li>
+        <li><a href="404.html">Return Policy</a></li>
+        <li><a href="404.html">contact</a></li>
+      </ul>
+    </div>
+
+  <div class="newsletter">
+  <h3>Join Our Newsletter</h3>
+  <input type="email" id="email" placeholder="Enter your email">
+  <button type="button" onclick="subscribe()">Subscribe Now</button>
+  <p id="msg"></p>
+</div>
+
+
+  </div>
+
+  <div class="bottom-footer">
+    © 2025 GlowCare. All Rights Reserved.
+  </div>
+</footer>
+<!-- ============ FOOTER END ============ -->
+
+<script src="hair colour.js"></script>
+</body>
+</html>
+
+
+

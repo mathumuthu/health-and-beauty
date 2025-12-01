@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="lip.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+<body>
+  
+
+
+
+
+ <div class="topbar">
+    <header class="header">
+      <div class="logo">
+        <img src="logo .webp" alt="STACKLY Logo" />
+        <h2>STACKLY</h2>
+      </div>
+      <div class="contact">
+        <div class="contact1">
+          <!-- <p class="phone"><a href="./404.html">+91 12345 67890</a></p> -->
+          <!-- <p class="email"><a href="./404.html">info@stackly.com</a></p> -->
+        </div>
+        <!-- <div class="time">
+          <p class="hours">Mon-Fri: 9 am-6 pm</p>
+        </div> -->
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    
+     <nav class="navBar">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./home page2.html">Home ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="./index.html">Home page 1</a></li>
+            </ul>
+          </li>
+          <li><a href="./eye.html">Eye care</a></li>
+          <!-- <li><a href="./industry.html">Shop</a></li> -->
+          <!-- <li><a href="./safety.html">support</a></li> -->
+           <li><a href="./lip care.html">Lip care</a></li> 
+           <li><a href="./brand.html">Brands</a></li> 
+         <!-- <li><a href="./dashboard.html">Dashboard</a></li> -->
+
+          <li><a href="./login.html">Log In</a></li>
+          <li class="sign"><button onclick="window.location.href='./contact2.html'">Get in touch→ </button></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    /* Reset-ish */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#fff; color:#222; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+    /* Section Styling */
+    .lipcare-section {
+      padding: 64px 20px;
+      background: linear-gradient(135deg,#fff6fb 0%, #fff0f6 100%);
+    }
+
+    .lipcare-container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .lipcare-title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 800;
+      color: #e91e63;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUpTitle 800ms ease-out forwards;
+      animation-delay: 120ms;
+    }
+
+    .lipcare-subtitle {
+      text-align: center;
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 34px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUpTitle 900ms ease-out forwards;
+      animation-delay: 220ms;
+    }
+
+    @keyframes fadeUpTitle {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Grid */
+    .lipcare-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 26px;
+      align-items: start;
+    }
+
+    /* Card */
+    .lipcare-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 8px 22px rgba(233,30,99,0.08);
+      transition: transform .35s cubic-bezier(.2,.9,.4,1), box-shadow .35s;
+      cursor: default;
+      /* start hidden for scroll animation */
+      opacity: 0;
+      transform: translateY(30px) scale(0.995);
+      will-change: transform, opacity;
+      overflow: hidden;
+    }
+
+    .lipcare-card.show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      transition: transform .6s cubic-bezier(.2,.9,.4,1), opacity .6s;
+    }
+
+    .lipcare-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 18px 40px rgba(233,30,99,0.12);
+    }
+
+    .lipcare-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      transition: transform .45s ease;
+    }
+
+    .lipcare-card:hover img { transform: scale(1.06); }
+
+    .lipcare-card h3 {
+      font-size: 18px;
+      color: #c60062;
+      margin-bottom: 8px;
+      line-height: 1.15;
+    }
+
+    .lipcare-card p {
+      font-size: 13.5px;
+      color: #5a5a5a;
+      margin-bottom: 14px;
+      min-height: 38px;
+    }
+
+    .lip-btn {
+      display: inline-block;
+      background: linear-gradient(90deg,#ff3b8a,#ff1a8c);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      font-size: 14px;
+      border-radius: 24px;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s;
+      box-shadow: 0 6px 18px rgba(255,26,140,0.18);
+    }
+
+    .lip-btn:active { transform: translateY(1px) scale(.995); }
+    .lip-btn.added {
+      background: linear-gradient(90deg,#00a86b,#00b77a);
+      box-shadow: 0 6px 18px rgba(0,167,107,0.18);
+    }
+
+    /* extra info row */
+    .lipcare-info {
+      margin-top: 26px;
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: #444;
+      font-size: 14px;
+    }
+
+    .lipcare-info .chip {
+      background: rgba(230,30,80,0.06);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color:#c60062;
+      font-weight:600;
+      font-size:13px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 680px) {
+      .lipcare-title { font-size: 28px; }
+      .lipcare-subtitle { font-size: 14px; max-width: 90%; margin: 0 auto 26px; }
+      .lipcare-card img { height: 140px; }
+    }
+
+    /* Accessibility: focus */
+    .lip-btn:focus { outline: 3px solid rgba(233,30,99,0.14); outline-offset: 3px; border-radius: 20px; }
+
+  </style>
+</head>
+<body>
+
+  <section class="lipcare-section" id="lipcare">
+    <div class="lipcare-container">
+
+      <h2 class="lipcare-title">Lip Care Collection</h2>
+      <p class="lipcare-subtitle">Pamper your lips with nourishing balms, scrubs, masks and serums — crafted to hydrate, brighten and protect.</p>
+
+      <!-- Products grid -->
+      <div class="lipcare-grid" id="lipGrid">
+
+        <!-- Card 1 -->
+        <article class="lipcare-card" data-id="1">
+          <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Hydrating Lip Balm">
+          <h3>Hydrating Lip Balm</h3>
+          <p>Shea butter + vitamin E formula. Long-lasting moisture for up to 12 hours.</p>
+          <button class="lip-btn" type="button">Buy Now</button>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="lipcare-card" data-id="2">
+          <img src="lip balm.webp" alt="Strawberry Lip Scrub">
+          <h3>Strawberry Sugar Scrub</h3>
+          <p>Gentle exfoliation to remove dry skin and restore softness & natural pinkness.</p>
+          <button class="lip-btn" type="button">Buy Now</button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="lipcare-card" data-id="3">
+          <img src="eye gel (1).webp" alt="Night Repair Lip Mask">
+          <h3>Overnight Repair Lip Mask</h3>
+          <p>Intensive overnight treatment for smooth, glossy lips by morning.</p>
+          <button class="lip-btn" type="button">Buy Now</button>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="lipcare-card" data-id="4">
+          <img src="https://images.unsplash.com/photo-1531905251730-1a1f0e9d1d63?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Natural Lip Tint">
+          <h3>Natural Lip Tint</h3>
+          <p>Light tint with beetroot extract — a hint of color with hydration.</p>
+          <button class="lip-btn" type="button">Buy Now</button>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="lipcare-card" data-id="5">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop&crop=faces" alt="Glossy Lip Oil">
+          <h3>Glossy Lip Oil</h3>
+          <p>High-shine finish with coconut & jojoba oil for plump, dewy lips.</p>
+          <button class="lip-btn" type="button">Buy Now</button>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="lipcare-card" data-id="6">
+          <img src="lip tint.webp" alt="Brightening Lip Serum">
+          <h3>Brightening Lip Serum</h3>
+          <p>Targets pigmentation and enhances natural pink tone with regular use.</p>
+          <button class="lip-btn" type="button">Buy Now</button>
+        </article>
+
+      </div>
+
+      <!-- Info chips -->
+      <div class="lipcare-info" aria-hidden="false">
+        <div class="chip">Cruelty Free</div>
+        <div class="chip">Dermatologist Tested</div>
+        <div class="chip">Natural Extracts</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JS: placed at end to ensure DOM exists -->
+  <script>
+    (function () {
+      // Safe: DOM fully loaded as script placed at end
+      const cards = document.querySelectorAll('.lipcare-card');
+      const buttons = document.querySelectorAll('.lip-btn');
+
+      // IntersectionObserver for reveal on scroll
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show'); // uses .show to reveal
+              observer.unobserve(entry.target);   // reveal once
+            }
+          });
+        }, { threshold: 0.18 });
+        cards.forEach(c => io.observe(c));
+      } else {
+        // Fallback: show immediately
+        cards.forEach(c => c.classList.add('show'));
+      }
+
+      // Button behaviour: temporary "Added" feedback
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          const b = e.currentTarget;
+          // prevent double-click causing multiple timers
+          if (b.classList.contains('added')) return;
+
+          b.classList.add('added');
+          const originalText = b.textContent;
+          b.textContent = 'Added ✔';
+          // simple tiny animation effect
+          b.animate([
+            { transform: 'scale(1)' },
+            { transform: 'scale(1.06)' },
+            { transform: 'scale(1)' }
+          ], { duration: 280 });
+
+          // revert after 1400ms
+          setTimeout(() => {
+            b.classList.remove('added');
+            b.textContent = originalText;
+          }, 1400);
+        });
+      });
+
+      // Keyboard accessibility: allow Enter key on focused button element
+      buttons.forEach(btn => {
+        btn.addEventListener('keyup', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            btn.click();
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <h2>GlowCare</h2>
+      <p>Your trusted partner in beauty, skincare & wellness. Quality products made with love.</p>
+
+      <div class="social">
+        <a href="404error.html"><i class="fab fa-facebook"></i></a>
+        <a href="404error.html"><i class="fab fa-instagram"></i></a>
+        <a href="404error.html"><i class="fab fa-youtube"></i></a>
+        <a href="404error.html"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home page2.html">Home</a></li>
+        <li><a href="eye.html">eyecare</a></li>
+        <li><a href="lip care.html">lipcare</a></li>
+        <li><a href="services.html">Beauty Services</a></li>
+        <li><a href="hair designer.html">Designer</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="404error.html">My Account</a></li>
+        <li><a href="404error.html">Order Tracking</a></li>
+        <li><a href="404error.html">Shipping Info</a></li>
+        <li><a href="404error.html">Return Policy</a></li>
+        <li><a href="404error.html">contact</a></li>
+      </ul>
+    </div>
+
+  <div class="newsletter">
+  <h3>Join Our Newsletter</h3>
+  <input type="email" id="email" placeholder="Enter your email">
+  <button type="button" onclick="subscribe()">Subscribe Now</button>
+  <p id="msg"></p>
+</div>
+
+
+  </div>
+
+  <div class="bottom-footer">
+    © 2025 GlowCare. All Rights Reserved.
+  </div>
+</footer>
+<!-- ============ FOOTER END ============ -->
+
+<script src="lip.js"></script>
+</body>
+</html>

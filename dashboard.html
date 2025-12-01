@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health & Beauty Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+  <!-- ⭐ FIXED LOGO (same line) -->
+  <h2 class="logo">
+      <img src="logo .webp" width="35px" alt="">
+      <span>STACKLY</span>
+  </h2>
+
+  <ul>
+  <a href="404.html">  <li class="active"><i class="fa fa-home"></i> Dashboard</li> </a> 
+   <a href="404.html"> <li><i class="fa fa-user"></i> Customers</li></a>
+  <a href="404.html"> <li><i class="fa fa-spa"></i> Services</li></a> 
+ <a href="404.html">  <li><i class="fa fa-calendar-alt"></i> Appointments</li></a> 
+<a href="404.html"><li><i class="fa fa-clipboard-list"></i> Orders</li></a>
+ <a href="404.html"> <li><i class="fa fa-cog"></i> Settings</li></a>  
+ <a href="404.html">   <li><i class="fa fa-sign-out-alt"></i> Logout</li></a>
+  </ul>
+</div>
+
+<!-- MAIN DASHBOARD -->
+<div class="main">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <h1>Dashboard Overview</h1>
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards">
+
+    <div class="card fade">
+      <div>
+        <h3>Total Customers</h3>
+        <h2>1,248</h2>
+      </div>
+      <i class="fa fa-users"></i>
+    </div>
+
+    <div class="card fade delay-1">
+      <div>
+        <h3>Total Revenue</h3>
+        <h2>₹84,560</h2>
+      </div>
+      <i class="fa fa-indian-rupee-sign"></i>
+    </div>
+
+    <div class="card fade delay-2">
+      <div>
+        <h3>Appointments Today</h3>
+        <h2>32</h2>
+      </div>
+      <i class="fa fa-calendar-check"></i>
+    </div>
+
+    <div class="card fade delay-3">
+      <div>
+        <h3>Services Sold</h3>
+        <h2>289</h2>
+      </div>
+      <i class="fa fa-spa"></i>
+    </div>
+
+  </div>
+
+  <!-- TABLE AREA -->
+  <div class="table-section fade delay-3">
+    <h2>Recent Appointments</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Service</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Priya Sharma</td>
+          <td>Facial Treatment</td>
+          <td>30 Nov 2025</td>
+          <td><span class="status done">Completed</span></td>
+        </tr>
+
+        <tr>
+          <td>Anita Rao</td>
+          <td>Haircut & Styling</td>
+          <td>30 Nov 2025</td>
+          <td><span class="status pending">Pending</span></td>
+        </tr>
+
+        <tr>
+          <td>Riya Das</td>
+          <td>Body Spa</td>
+          <td>30 Nov 2025</td>
+          <td><span class="status cancel">Cancelled</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff4fb;
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background: #d63384;
+  height: 100vh;
+  padding: 20px;
+  color: #fff;
+  position: fixed;
+}
+
+/* ⭐ FIXED LOGO (same line) */
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sidebar .logo img {
+  display: block;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: 0.300s ease;
+}
+
+.sidebar ul li i {
+  margin-right: 10px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background: #ffb3d9;
+}
+
+/* MAIN */
+.main {
+  margin-left: 250px;
+  padding: 30px;
+  width: calc(100% - 250px);
+}
+
+/* TOP BAR */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar input {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  width: 220px;
+  outline: none;
+}
+
+/* CARDS */
+.cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card i {
+  font-size: 40px;
+  color: #d63384;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #777;
+}
+
+.card h2 {
+  color: #d63384;
+}
+
+/* TABLE */
+.table-section {
+  margin-top: 40px;
+}
+
+.table-section h2 {
+  margin-bottom: 15px;
+  color: #d63384;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: #d63384;
+  color: #fff;
+}
+
+thead th {
+  padding: 12px;
+}
+
+tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* STATUS */
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.status.done { background: #28a745; }
+.status.pending { background: #ffc107; color:#000; }
+.status.cancel { background: #dc3545; }
+
+/* ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s ease-out;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: .2s; }
+.delay-2 { transition-delay: .4s; }
+.delay-3 { transition-delay: .6s; }
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  .main {
+    margin-left: 200px;
+  }
+}
+</style>
+
+<script>
+// Fade animation on scroll
+const fades = document.querySelectorAll('.fade');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+fades.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
